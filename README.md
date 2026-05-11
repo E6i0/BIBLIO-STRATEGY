@@ -5,127 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EGIO PROGRESS | Biblio Strategy</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #e5e5e5; }
+        .serif { font-family: 'Playfair Display', serif; }
         .mono { font-family: 'JetBrains Mono', monospace; }
+        .gold-gradient { background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%); }
+        .gold-text { color: #d4af37; }
+        .border-gold { border-color: rgba(212, 175, 55, 0.3); }
     </style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="antialiased">
 
-    <!-- HEADER / NAVIGATION -->
-    <nav class="max-w-6xl mx-auto px-6 py-8 flex justify-between items-center">
-        <div class="text-xl font-semibold tracking-tighter">EGIO <span class="text-indigo-600">PROGRESS</span></div>
-        <div class="space-x-8 text-xs uppercase tracking-widest text-gray-500 font-medium">
-            <a href="#" class="hover:text-indigo-600 transition-colors">Sistema</a>
-            <a href="#" class="hover:text-indigo-600 transition-colors">Zonas</a>
-            <a href="#" class="hover:text-indigo-600 transition-colors">Mente</a>
+    <nav class="max-w-6xl mx-auto px-8 py-10 flex justify-between items-center border-b border-white/5">
+        <div class="text-2xl font-bold tracking-tighter serif">EGIO <span class="gold-text italic underline">PROGRESS</span></div>
+        <div class="hidden md:flex space-x-10 text-[10px] uppercase tracking-[0.4em] text-gray-500 font-bold">
+            <a href="#" class="hover:text-white transition-all">Mente</a>
+            <a href="#" class="hover:text-white transition-all">Cuerpo</a>
+            <a href="#" class="hover:text-white transition-all">Alma</a>
         </div>
     </nav>
 
-    <!-- HERO SECTION (GIO PROGRESS CORE) -->
-    <header class="max-w-4xl mx-auto pt-16 pb-24 px-6 text-center">
-        <h2 class="text-xs uppercase tracking-[0.4em] text-indigo-500 mb-4 font-semibold">Home Order = Mental Clarity</h2>
-        <h1 class="text-5xl md:text-6xl font-light leading-tight mb-6">Optimiza tu entorno,<br><span class="font-semibold text-gray-900">domina tu mente.</span></h1>
-        <p class="text-gray-500 max-w-xl mx-auto text-lg leading-relaxed">Gestión de micro-zonas, rutinas de energía funcional y maestría operativa diaria.</p>
-    </header>
+    <main class="max-w-4xl mx-auto pt-20 pb-12 px-8">
+        
+        <div class="text-center mb-24">
+            <h2 class="text-[10px] uppercase tracking-[0.5em] gold-text mb-4 font-bold opacity-80">Epistemología Aplicada</h2>
+            <h1 class="text-5xl md:text-7xl font-light serif leading-tight mb-8">BIBLIO <br> <span class="italic">STRATEGY</span></h1>
+            <div class="h-px w-24 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto"></div>
+        </div>
 
-    <!-- BIBLIO STRATEGY SECTION -->
-    <section class="max-w-5xl mx-auto my-12 px-6">
-        <div class="bg-gray-50 rounded-[2.5rem] p-8 md:p-16 border border-gray-100 shadow-sm">
+        <section class="bg-[#111] rounded-3xl p-10 md:p-16 border border-white/5 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-[#d4af37] opacity-[0.03] blur-[100px] rounded-full"></div>
             
-            <!-- Header del Proyecto -->
-            <div class="mb-16 text-center">
-                <h2 class="text-xs uppercase tracking-[0.3em] text-gray-400 mb-2">Protocolo de Optimización</h2>
-                <h1 class="text-4xl font-light tracking-tight text-gray-900 uppercase">Biblio <span class="font-semibold text-indigo-600">Strategy</span></h1>
-                <div class="mt-4 h-1 w-12 bg-indigo-600 mx-auto"></div>
-            </div>
-
-            <!-- Descripción del Motor Lógico -->
-            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
-                <div class="space-y-6">
-                    <h3 class="text-2xl font-light leading-snug text-gray-800">
-                        "La sabiduría antigua como motor de <span class="italic">ejecución moderna</span>."
-                    </h3>
-                    <p class="text-sm leading-relaxed text-gray-600">
-                        Interfaz de procesamiento ético que utiliza textos históricos bajo un rigor **epistemológico**. El sistema filtra principios de maestría y gestión de recursos, traduciendo conceptos milenarios en acciones de alto rendimiento para el impacto social y profesional.
+            <div class="grid md:grid-cols-2 gap-16 mb-20 relative">
+                <div>
+                    <p class="serif italic text-2xl text-gray-300 leading-relaxed mb-8">
+                        "La esencia no es la religión, es la verdad operativa que calma y enfoca el espíritu."
                     </p>
-                    <div class="flex items-center gap-6 text-[0.65rem] font-mono font-bold text-indigo-500 tracking-wider">
-                        <span class="flex items-center gap-2"><span class="w-2 h-2 bg-green-400 rounded-full"></span> STATUS: ACTIVE</span>
-                        <span>TYPE: LOGIC_GATE</span>
-                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed font-light">
+                        Este protocolo utiliza el análisis de textos antiguos para decodificar palabras que necesitas leer según tu estado emocional actual. 
+                    </p>
                 </div>
-                
-                <!-- Terminal de Procesamiento -->
-                <div class="bg-gray-900 rounded-2xl p-8 shadow-2xl shadow-indigo-200/40 border border-white/10">
-                    <div class="flex gap-1.5 mb-6">
-                        <div class="w-3 h-3 rounded-full bg-red-500/30 text-center text-[8px]"></div>
-                        <div class="w-3 h-3 rounded-full bg-yellow-500/30"></div>
-                        <div class="w-3 h-3 rounded-full bg-green-500/30"></div>
-                    </div>
-                    <code class="text-xs leading-relaxed text-indigo-300 block mono">
-                        <span class="text-gray-500">// Initialize BiblioStrategy.v2</span><br><br>
-                        {<br>
-                        &nbsp;&nbsp;"input": <span class="text-yellow-400">"Clima_Interno"</span>,<br>
-                        &nbsp;&nbsp;"mapping": <span class="text-yellow-400 opacity-70">"Epistemological_Filter"</span>,<br>
-                        &nbsp;&nbsp;"output": <span class="text-green-400">"Strategic_Action"</span>,<br>
-                        &nbsp;&nbsp;"target": <span class="text-indigo-400">"Impacto_Social"</span><br>
-                        }<br><br>
-                        <span class="text-white opacity-40 animate-pulse">Running system_check...</span>
+                <div class="bg-black/40 rounded-2xl p-8 border border-gold">
+                    <code class="text-[11px] mono text-amber-200/70">
+                        <span class="text-gray-600">// Procesando estado emocional...</span><br>
+                        IF (clima_interno == "Caliente") {<br>
+                        &nbsp;&nbsp;return "Dominio Propio";<br>
+                        } ELSE {<br>
+                        &nbsp;&nbsp;return "Serenidad Operativa";<br>
+                        }
                     </code>
                 </div>
             </div>
 
-            <!-- Ciclos de Ejecución con Botones de Acción -->
-            <div class="grid md:grid-cols-3 gap-8 pt-4">
-                
-                <!-- Fase 01: Mañana -->
-                <div class="group p-8 bg-white border border-gray-100 hover:border-indigo-200 transition-all rounded-3xl shadow-sm hover:shadow-xl">
-                    <div class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center mb-6">
-                        <span class="text-indigo-600 font-bold text-xs underline">01</span>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-2">Enfoque</h4>
-                    <p class="text-xs text-gray-400 leading-relaxed mb-8">Definir el matiz de energía y el eje estratégico inicial.</p>
-                    
-                    <button class="w-full py-3 px-4 bg-gray-900 text-white text-[0.7rem] tracking-[0.2em] uppercase font-bold rounded-xl hover:bg-indigo-600 transition-all flex items-center justify-center gap-2">
-                        Generar Consulta
-                    </button>
-                </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <button onclick="faseManana()" class="group text-left p-8 bg-white/5 border border-white/5 rounded-2xl hover:border-[#d4af37]/50 transition-all">
+                    <span class="text-[9px] uppercase tracking-widest gold-text font-black">01. Inicio</span>
+                    <h4 class="text-xl serif mt-2 mb-4">Mañana</h4>
+                    <p class="text-[10px] text-gray-500 italic mb-6">¿Cuál es el matiz de tu energía hoy?</p>
+                    <div class="text-[9px] font-bold gold-text uppercase tracking-widest group-hover:underline">Consultar →</div>
+                </button>
 
-                <!-- Fase 02: Tarde -->
-                <div class="group p-8 bg-white border border-gray-100 hover:border-indigo-200 transition-all rounded-3xl shadow-sm hover:shadow-xl">
-                    <div class="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center mb-6">
-                        <span class="text-gray-400 font-bold text-xs">02</span>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-2">Refuerzo</h4>
-                    <p class="text-xs text-gray-400 leading-relaxed mb-8">Termómetro de intención frente a la operatividad.</p>
-                    
-                    <button class="w-full py-3 px-4 border border-gray-200 text-gray-800 text-[0.7rem] tracking-[0.2em] uppercase font-bold rounded-xl hover:bg-gray-50 transition-all">
-                        Seguimiento
-                    </button>
-                </div>
+                <button onclick="faseTarde()" class="group text-left p-8 bg-white/5 border border-white/5 rounded-2xl hover:border-[#d4af37]/50 transition-all">
+                    <span class="text-[9px] uppercase tracking-widest gold-text font-black">02. Refuerzo</span>
+                    <h4 class="text-xl serif mt-2 mb-4">Tarde</h4>
+                    <p class="text-[10px] text-gray-500 italic mb-6">¿Qué domina tus horas ahora?</p>
+                    <div class="text-[9px] font-bold gold-text uppercase tracking-widest group-hover:underline">Seguimiento →</div>
+                </button>
 
-                <!-- Fase 03: Noche -->
-                <div class="group p-8 bg-white border border-gray-100 hover:border-indigo-200 transition-all rounded-3xl shadow-sm hover:shadow-xl">
-                    <div class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center mb-6">
-                        <span class="text-indigo-600 font-bold text-xs">03</span>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-2">Cosecha</h4>
-                    <p class="text-xs text-gray-400 leading-relaxed mb-8">Auditoría de resultados y liberación de carga mental.</p>
-                    
-                    <button class="w-full py-3 px-4 bg-indigo-50 text-indigo-700 text-[0.7rem] tracking-[0.2em] uppercase font-bold rounded-xl hover:bg-indigo-100 transition-all">
-                        Cerrar Día
-                    </button>
-                </div>
+                <button onclick="faseNoche()" class="group text-left p-8 bg-white/5 border border-white/5 rounded-2xl hover:border-[#d4af37]/50 transition-all">
+                    <span class="text-[9px] uppercase tracking-widest gold-text font-black">03. Cosecha</span>
+                    <h4 class="text-xl serif mt-2 mb-4">Noche</h4>
+                    <p class="text-[10px] text-gray-500 italic mb-6">¿Qué pesa más en tu balance?</p>
+                    <div class="text-[9px] font-bold gold-text uppercase tracking-widest group-hover:underline">Cerrar día →</div>
+                </button>
             </div>
+        </section>
+    </main>
 
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="py-12 text-center border-t border-gray-50 mt-20">
-        <p class="text-[0.6rem] uppercase tracking-[0.5em] text-gray-400 italic">Mente • Cuerpo • Alma — Egio Progress 2026</p>
+    <footer class="py-20 text-center opacity-30">
+        <p class="text-[9px] uppercase tracking-[1em] font-bold">Hecho para el Bien • 2026</p>
     </footer>
+
+    <script>
+        function faseManana() {
+            let r = prompt("¿Cuál es el matiz principal de tu energía hoy? ¿Impulso de ejecución o incertidumbre?");
+            if(r) alert("Entendido. Ahora dime esto en nuestro chat para darte tu versículo de enfoque.");
+        }
+        function faseTarde() {
+            let r = prompt("¿Qué ha dominado tus primeras horas: el progreso o las distracciones ajenas?");
+            if(r) alert("Recalibrando... Comparte esto en el chat para tu refuerzo de mediodía.");
+        }
+        function faseNoche() {
+            let r = prompt("Al hacer balance hoy, ¿qué pesa más: la satisfacción o el ruido por lo pendiente?");
+            if(r) alert("Es momento de soltar. Copia tu respuesta en el chat para tu reflexión final.");
+        }
+    </script>
 
 </body>
 </html>
