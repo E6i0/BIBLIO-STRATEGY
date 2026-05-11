@@ -3,104 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EGIO PROGRESS | Biblio Strategy</title>
+    <title>BIBLIO STRATEGY | Egio Progress</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #e5e5e5; }
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #e5e5e5; }
         .serif { font-family: 'Playfair Display', serif; }
-        .mono { font-family: 'JetBrains Mono', monospace; }
-        .gold-gradient { background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%); }
         .gold-text { color: #d4af37; }
-        .border-gold { border-color: rgba(212, 175, 55, 0.3); }
+        .gold-bg { background-color: #d4af37; }
+        .border-gold { border-color: rgba(212, 175, 55, 0.2); }
+        .terminal-bg { background-color: rgba(15, 15, 15, 0.95); }
     </style>
 </head>
 <body class="antialiased">
 
-    <nav class="max-w-6xl mx-auto px-8 py-10 flex justify-between items-center border-b border-white/5">
-        <div class="text-2xl font-bold tracking-tighter serif">EGIO <span class="gold-text italic underline">PROGRESS</span></div>
-        <div class="hidden md:flex space-x-10 text-[10px] uppercase tracking-[0.4em] text-gray-500 font-bold">
-            <a href="#" class="hover:text-white transition-all">Mente</a>
-            <a href="#" class="hover:text-white transition-all">Cuerpo</a>
-            <a href="#" class="hover:text-white transition-all">Alma</a>
-        </div>
+    <nav class="max-w-6xl mx-auto px-8 py-12 flex justify-between items-center border-b border-white/5">
+        <div class="text-2xl font-bold tracking-tighter serif italic gold-text">Biblio Strategy</div>
+        <div class="text-[9px] uppercase tracking-[0.5em] text-gray-600 font-bold">Protocolo v2.0</div>
     </nav>
 
-    <main class="max-w-4xl mx-auto pt-20 pb-12 px-8">
+    <main class="max-w-4xl mx-auto pt-16 px-8 pb-32">
         
-        <div class="text-center mb-24">
-            <h2 class="text-[10px] uppercase tracking-[0.5em] gold-text mb-4 font-bold opacity-80">Epistemología Aplicada</h2>
-            <h1 class="text-5xl md:text-7xl font-light serif leading-tight mb-8">BIBLIO <br> <span class="italic">STRATEGY</span></h1>
-            <div class="h-px w-24 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto"></div>
-        </div>
+        <section class="text-center mb-20">
+            <h1 class="text-6xl serif font-light mb-6 uppercase tracking-tight">Sabiduría <br><span class="italic gold-text">Operativa</span></h1>
+            <p class="text-gray-500 max-w-lg mx-auto text-sm leading-relaxed italic">
+                "No es religión, es tecnología espiritual para el dominio del caos diario."
+            </p>
+        </section>
 
-        <section class="bg-[#111] rounded-3xl p-10 md:p-16 border border-white/5 shadow-2xl relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-[#d4af37] opacity-[0.03] blur-[100px] rounded-full"></div>
-            
-            <div class="grid md:grid-cols-2 gap-16 mb-20 relative">
-                <div>
-                    <p class="serif italic text-2xl text-gray-300 leading-relaxed mb-8">
-                        "La esencia no es la religión, es la verdad operativa que calma y enfoca el espíritu."
-                    </p>
-                    <p class="text-sm text-gray-500 leading-relaxed font-light">
-                        Este protocolo utiliza el análisis de textos antiguos para decodificar palabras que necesitas leer según tu estado emocional actual. 
-                    </p>
-                </div>
-                <div class="bg-black/40 rounded-2xl p-8 border border-gold">
-                    <code class="text-[11px] mono text-amber-200/70">
-                        <span class="text-gray-600">// Procesando estado emocional...</span><br>
-                        IF (clima_interno == "Caliente") {<br>
-                        &nbsp;&nbsp;return "Dominio Propio";<br>
-                        } ELSE {<br>
-                        &nbsp;&nbsp;return "Serenidad Operativa";<br>
-                        }
-                    </code>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-6">
-                <button onclick="faseManana()" class="group text-left p-8 bg-white/5 border border-white/5 rounded-2xl hover:border-[#d4af37]/50 transition-all">
-                    <span class="text-[9px] uppercase tracking-widest gold-text font-black">01. Inicio</span>
-                    <h4 class="text-xl serif mt-2 mb-4">Mañana</h4>
-                    <p class="text-[10px] text-gray-500 italic mb-6">¿Cuál es el matiz de tu energía hoy?</p>
-                    <div class="text-[9px] font-bold gold-text uppercase tracking-widest group-hover:underline">Consultar →</div>
-                </button>
-
-                <button onclick="faseTarde()" class="group text-left p-8 bg-white/5 border border-white/5 rounded-2xl hover:border-[#d4af37]/50 transition-all">
-                    <span class="text-[9px] uppercase tracking-widest gold-text font-black">02. Refuerzo</span>
-                    <h4 class="text-xl serif mt-2 mb-4">Tarde</h4>
-                    <p class="text-[10px] text-gray-500 italic mb-6">¿Qué domina tus horas ahora?</p>
-                    <div class="text-[9px] font-bold gold-text uppercase tracking-widest group-hover:underline">Seguimiento →</div>
-                </button>
-
-                <button onclick="faseNoche()" class="group text-left p-8 bg-white/5 border border-white/5 rounded-2xl hover:border-[#d4af37]/50 transition-all">
-                    <span class="text-[9px] uppercase tracking-widest gold-text font-black">03. Cosecha</span>
-                    <h4 class="text-xl serif mt-2 mb-4">Noche</h4>
-                    <p class="text-[10px] text-gray-500 italic mb-6">¿Qué pesa más en tu balance?</p>
-                    <div class="text-[9px] font-bold gold-text uppercase tracking-widest group-hover:underline">Cerrar día →</div>
-                </button>
+        <section id="display-area" class="mb-16 hidden">
+            <div class="terminal-bg border border-gold p-10 rounded-3xl shadow-[0_0_50px_rgba(212,175,55,0.05)]">
+                <h3 id="res-fase" class="text-[10px] uppercase tracking-[0.4em] gold-text font-bold mb-6">Procesando...</h3>
+                <div id="res-texto" class="serif text-3xl italic text-white mb-8 leading-snug"></div>
+                <div id="res-analisis" class="text-sm text-gray-400 leading-relaxed border-t border-white/5 pt-8 font-light"></div>
+                <button onclick="cerrarDisplay()" class="mt-8 text-[9px] uppercase tracking-widest text-gray-600 hover:text-white transition-colors underline">Limpiar Terminal</button>
             </div>
         </section>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <button onclick="procesar('manana')" class="group p-10 terminal-bg border border-white/5 rounded-3xl hover:border-gold transition-all text-left">
+                <span class="gold-text text-[9px] font-bold tracking-[0.3em] uppercase">01. Enfoque</span>
+                <h4 class="text-xl serif mt-2">Mañana</h4>
+            </button>
+
+            <button onclick="procesar('tarde')" class="group p-10 terminal-bg border border-white/5 rounded-3xl hover:border-gold transition-all text-left">
+                <span class="gold-text text-[9px] font-bold tracking-[0.3em] uppercase">02. Ajuste</span>
+                <h4 class="text-xl serif mt-2">Mediodía</h4>
+            </button>
+
+            <button onclick="procesar('noche')" class="group p-10 terminal-bg border border-white/5 rounded-3xl hover:border-gold transition-all text-left">
+                <span class="gold-text text-[9px] font-bold tracking-[0.3em] uppercase">03. Cierre</span>
+                <h4 class="text-xl serif mt-2">Cosecha</h4>
+            </button>
+        </div>
     </main>
 
-    <footer class="py-20 text-center opacity-30">
-        <p class="text-[9px] uppercase tracking-[1em] font-bold">Hecho para el Bien • 2026</p>
-    </footer>
-
     <script>
-        function faseManana() {
-            let r = prompt("¿Cuál es el matiz principal de tu energía hoy? ¿Impulso de ejecución o incertidumbre?");
-            if(r) alert("Entendido. Ahora dime esto en nuestro chat para darte tu versículo de enfoque.");
+        const database = {
+            manana: {
+                fase: "Protocolo de Apertura",
+                texto: '"En la quietud y en la confianza estará vuestra fortaleza."',
+                analisis: "ANÁLISIS: La fuerza no nace de la velocidad, sino de la estabilidad interna. Si tu clima es 'caliente', usa este principio como refrigerante para tomar decisiones técnicas, no emocionales."
+            },
+            tarde: {
+                fase: "Termómetro de Intención",
+                texto: '"No nos cansemos, pues, de hacer bien; porque a su tiempo segaremos."',
+                analisis: "ANÁLISIS: La fatiga del mediodía es el filtro que separa al profesional del aficionado. La constancia en BAMX hoy es la semilla de tu independencia mañana."
+            },
+            noche: {
+                fase: "Auditoría de Cierre",
+                texto: '"En paz me acostaré, y asimismo dormiré."',
+                analisis: "ANÁLISIS: El ciclo ha terminado. Si lograste tus metas, el descanso es tu derecho legal. Suelta el ruido de lo pendiente; mañana el sistema se reinicia."
+            }
+        };
+
+        function procesar(momento) {
+            const area = document.getElementById('display-area');
+            document.getElementById('res-fase').innerText = database[momento].fase;
+            document.getElementById('res-texto').innerText = database[momento].texto;
+            document.getElementById('res-analisis').innerText = database[momento].analisis;
+            area.classList.remove('hidden');
+            window.scrollTo({ top: area.offsetTop - 50, behavior: 'smooth' });
         }
-        function faseTarde() {
-            let r = prompt("¿Qué ha dominado tus primeras horas: el progreso o las distracciones ajenas?");
-            if(r) alert("Recalibrando... Comparte esto en el chat para tu refuerzo de mediodía.");
-        }
-        function faseNoche() {
-            let r = prompt("Al hacer balance hoy, ¿qué pesa más: la satisfacción o el ruido por lo pendiente?");
-            if(r) alert("Es momento de soltar. Copia tu respuesta en el chat para tu reflexión final.");
+
+        function cerrarDisplay() {
+            document.getElementById('display-area').classList.add('hidden');
         }
     </script>
-
 </body>
 </html>
